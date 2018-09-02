@@ -26,7 +26,7 @@ $ npm install -g vibranium
 $ vibranium COMMAND
 running command...
 $ vibranium (-v|--version|version)
-vibranium/0.0.0 darwin-x64 node-v8.11.3
+vibranium/0.0.1 darwin-x64 node-v8.11.3
 $ vibranium --help [COMMAND]
 USAGE
   $ vibranium COMMAND
@@ -41,7 +41,7 @@ USAGE
 
 ## `vibranium add [FILE]`
 
-describe the command here
+Add custom emulated devices from a json config file.
 
 ```
 USAGE
@@ -49,11 +49,10 @@ USAGE
 
 OPTIONS
   -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help   show CLI help
 ```
 
-_See code: [src/commands/add.ts](https://github.com/Pittan/vibranium/blob/v0.0.0/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/Pittan/vibranium/blob/v0.0.1/src/commands/add.ts)_
 
 ## `vibranium hello [FILE]`
 
@@ -73,7 +72,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/Pittan/vibranium/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/Pittan/vibranium/blob/v0.0.1/src/commands/hello.ts)_
 
 ## `vibranium help [COMMAND]`
 
