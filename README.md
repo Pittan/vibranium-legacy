@@ -36,6 +36,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`vibranium add [FILE]`](#vibranium-add-file)
+* [`vibranium export [FILE]`](#vibranium-export-file)
 * [`vibranium hello [FILE]`](#vibranium-hello-file)
 * [`vibranium help [COMMAND]`](#vibranium-help-command)
 
@@ -53,6 +54,22 @@ OPTIONS
 ```
 
 _See code: [src/commands/add.ts](https://github.com/Pittan/vibranium/blob/v0.0.2/src/commands/add.ts)_
+
+## `vibranium export [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ vibranium export [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/export.ts](https://github.com/Pittan/vibranium/blob/v0.0.2/src/commands/export.ts)_
 
 ## `vibranium hello [FILE]`
 
