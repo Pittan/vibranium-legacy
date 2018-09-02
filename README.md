@@ -26,7 +26,7 @@ $ npm install -g @pittankopta/vibranium
 $ vibranium COMMAND
 running command...
 $ vibranium (-v|--version|version)
-@pittankopta/vibranium/0.0.2 darwin-x64 node-v8.11.3
+@pittankopta/vibranium/0.0.3 darwin-x64 node-v8.11.3
 $ vibranium --help [COMMAND]
 USAGE
   $ vibranium COMMAND
@@ -36,8 +36,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`vibranium add [FILE]`](#vibranium-add-file)
-* [`vibranium export [FILE]`](#vibranium-export-file)
-* [`vibranium hello [FILE]`](#vibranium-hello-file)
+* [`vibranium export`](#vibranium-export)
 * [`vibranium help [COMMAND]`](#vibranium-help-command)
 
 ## `vibranium add [FILE]`
@@ -53,43 +52,23 @@ OPTIONS
   -h, --help   show CLI help
 ```
 
-_See code: [src/commands/add.ts](https://github.com/Pittan/vibranium/blob/v0.0.2/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/Pittan/vibranium/blob/v0.0.3/src/commands/add.ts)_
 
-## `vibranium export [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ vibranium export [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/export.ts](https://github.com/Pittan/vibranium/blob/v0.0.2/src/commands/export.ts)_
-
-## `vibranium hello [FILE]`
+## `vibranium export`
 
 describe the command here
 
 ```
 USAGE
-  $ vibranium hello [FILE]
+  $ vibranium export
 
 OPTIONS
   -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ vibranium hello
-  hello world from ./src/hello.ts!
+  -h, --help               show CLI help
+  -n, --filename=filename  filename to export
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/Pittan/vibranium/blob/v0.0.2/src/commands/hello.ts)_
+_See code: [src/commands/export.ts](https://github.com/Pittan/vibranium/blob/v0.0.3/src/commands/export.ts)_
 
 ## `vibranium help [COMMAND]`
 
