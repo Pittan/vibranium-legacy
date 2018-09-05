@@ -3,6 +3,7 @@ import * as fs from 'fs'
 
 import {ChromePreference} from '../chrome-preference'
 import {isChromeLaunching} from '../detect-chrome'
+import * as inquirer from 'inquirer'
 
 export default class Add extends Command {
   static description = 'Add custom emulated devices from a json config file.'
@@ -11,6 +12,7 @@ export default class Add extends Command {
     help: flags.help({char: 'h'}),
     // flag with no value (-f, --force)
     force: flags.boolean({char: 'f'}),
+    replace: flags.boolean({char: 'r', description: 'Replace all your existing emulated devices inside Chrome.'})
   }
 
   static args = [{name: 'file'}]
@@ -34,10 +36,24 @@ export default class Add extends Command {
 
     if (args.file) {
       const devicesFromFile: any[] = await this.getVibraniumPreference(args.file)
-      devicesFromFile.forEach(device => {
-        devices.push(device)
-        this.log(`  -> Added: ${device.title}`)
-      })
+
+      if (flags.replace) {
+        let responses: any = await inquirer.prompt([{
+          name: 'confirm',
+          message: 'It will replace all of your custom emulated devices. Are you sure?',
+          type: 'confirm',
+          default: false
+        }])
+        if (!responses.confirm) {
+          return
+        }
+        devices = devicesFromFile
+      } else {
+        devicesFromFile.forEach(device => {
+          devices.push(device)
+          this.log(`  -> Added: ${device.title}`)
+        })
+      }
     } else {
       // Maybe adding one device interactive will be nice.
       // But now, I'm going to throw an error.
