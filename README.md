@@ -8,12 +8,12 @@ If you are an native-app developer, maybe you have wondered "I wish I can add mu
 
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/vibranium.svg)](https://npmjs.org/package/vibranium)
+[![Version](https://img.shields.io/npm/v/@pittankopta/vibranium.svg)](https://npmjs.org/package/@pittankopta/vibranium)
 [![CircleCI](https://circleci.com/gh/Pittan/vibranium/tree/master.svg?style=shield)](https://circleci.com/gh/Pittan/vibranium/tree/master)
 [![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/Pittan/vibranium?branch=master&svg=true)](https://ci.appveyor.com/project/Pittan/vibranium/branch/master)
 [![Codecov](https://codecov.io/gh/Pittan/vibranium/branch/master/graph/badge.svg)](https://codecov.io/gh/Pittan/vibranium)
-[![Downloads/week](https://img.shields.io/npm/dw/vibranium.svg)](https://npmjs.org/package/vibranium)
-[![License](https://img.shields.io/npm/l/vibranium.svg)](https://github.com/Pittan/vibranium/blob/master/package.json)
+[![Downloads/week](https://img.shields.io/npm/dw/vibranium.svg)](https://npmjs.org/package/@pittankopta/vibranium)
+[![License](https://img.shields.io/npm/l/@pittankopta/vibranium.svg)](https://github.com/Pittan/vibranium/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
