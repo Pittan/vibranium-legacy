@@ -1,5 +1,6 @@
 import * as fs from 'fs'
 import * as os from 'os'
+import { promisify } from 'util'
 
 export class ChromePreference {
 
@@ -22,8 +23,11 @@ export class ChromePreference {
         if (err) { throw err }
         this.preferences = JSON.parse(data)
         this.configurationOpened = true
-        resolve()
+        resolve(data)
       })
+    }).then(data => {
+      const filePath = `${this.getMacPreferencesPath()}.backup`
+      return promisify(fs.writeFile)(filePath, data)
     })
   }
 
