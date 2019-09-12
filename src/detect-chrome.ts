@@ -1,4 +1,4 @@
-import * as find from 'find-process'
+import find = require('find-process')
 
 // TODO I tested this code on mac only.
 export async function isChromeLaunching() {
