@@ -26,7 +26,7 @@ $ npm install -g @pittankopta/vibranium
 $ vibranium COMMAND
 running command...
 $ vibranium (-v|--version|version)
-@pittankopta/vibranium/0.0.4 darwin-x64 node-v8.11.3
+@pittankopta/vibranium/0.0.9 darwin-x64 node-v10.14.2
 $ vibranium --help [COMMAND]
 USAGE
   $ vibranium COMMAND
@@ -53,7 +53,7 @@ OPTIONS
   -r, --replace  Replace all your existing emulated devices inside Chrome.
 ```
 
-_See code: [src/commands/add.ts](https://github.com/Pittan/vibranium/blob/v0.0.4/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/Pittan/vibranium/blob/v0.0.9/src/commands/add.ts)_
 
 ## `vibranium export`
 
@@ -69,7 +69,7 @@ OPTIONS
   -n, --filename=filename  filename to export
 ```
 
-_See code: [src/commands/export.ts](https://github.com/Pittan/vibranium/blob/v0.0.4/src/commands/export.ts)_
+_See code: [src/commands/export.ts](https://github.com/Pittan/vibranium/blob/v0.0.9/src/commands/export.ts)_
 
 ## `vibranium help [COMMAND]`
 
@@ -86,5 +86,5 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.1/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
 <!-- commandsstop -->
