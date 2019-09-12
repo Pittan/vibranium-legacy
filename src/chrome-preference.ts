@@ -46,7 +46,7 @@ export class ChromePreference {
   }
 
   getCustomEmulatedDeviceList() {
-    return JSON.parse(this.preferences.devtools.preferences.customEmulatedDeviceList) || []
+    return JSON.parse(((((this.preferences || {}).devtools || {}).preferences || {}).customEmulatedDeviceList || '[]')) || []
   }
 
   setCustomEmulatedDeviceList(list: any[] = []) {
